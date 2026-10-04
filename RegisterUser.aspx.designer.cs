@@ -24,15 +24,6 @@ namespace StayBuddy_.net
         protected global::System.Web.UI.WebControls.TextBox name;
 
         /// <summary>
-        /// nameRequired control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator nameRequired;
-
-        /// <summary>
         /// email control.
         /// </summary>
         /// <remarks>
@@ -42,15 +33,6 @@ namespace StayBuddy_.net
         protected global::System.Web.UI.WebControls.TextBox email;
 
         /// <summary>
-        /// validEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator validEmail;
-
-        /// <summary>
         /// contact control.
         /// </summary>
         /// <remarks>
@@ -58,15 +40,6 @@ namespace StayBuddy_.net
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox contact;
-
-        /// <summary>
-        /// validContact control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator validContact;
 
         /// <summary>
         /// password control.
@@ -85,15 +58,6 @@ namespace StayBuddy_.net
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox confirmPassword;
-
-        /// <summary>
-        /// confirmPasswordValid control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator confirmPasswordValid;
 
         /// <summary>
         /// register control.

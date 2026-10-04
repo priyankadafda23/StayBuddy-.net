@@ -13,5 +13,15 @@ namespace StayBuddy_.net
         {
 
         }
+
+        protected void adminBackToLogin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AdminLogin.aspx");
+        }
+
+        protected void adminResetPassword_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AdminLogin.aspx");
+        }
     }
 }

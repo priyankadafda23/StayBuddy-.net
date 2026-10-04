@@ -13,5 +13,15 @@ namespace StayBuddy_.net
         {
 
         }
+
+        protected void forgotPassword_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("UserForgotPassword.aspx");
+        }
+
+        protected void signUp_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("RegisterUser.aspx");
+        }
     }
 }

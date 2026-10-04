@@ -5,16 +5,21 @@
     <p>
         Create New Password</p>
     <p>
+        Reset your password</p>
+    <p>
         Current Password</p>
     <p>
-        <asp:TextBox ID="userCurrentPassword" runat="server">Enter your current password</asp:TextBox>
+        <asp:TextBox ID="userCurrentPassword" placeholder="Enter your current password" runat="server"></asp:TextBox>
     </p>
     <p>
         New Password</p>
     <p>
-        <asp:TextBox ID="userNewPassword" runat="server">Enter your new password</asp:TextBox>
+        <asp:TextBox ID="userNewPassword" placeholder="Enter your new password" runat="server"></asp:TextBox>
     </p>
     <p>
-        <asp:Button ID="userResetPassword" runat="server" Text="Reset Password" />
+        <asp:Button ID="userResetPassword" runat="server" Text="Reset Password" OnClick="userResetPassword_Click" />
+    </p>
+    <p>
+        <asp:LinkButton ID="backToLogin" runat="server" OnClick="backToLogin_Click">Back to Login</asp:LinkButton>
     </p>
 </asp:Content>

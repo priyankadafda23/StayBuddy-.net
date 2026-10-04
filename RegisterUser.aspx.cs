@@ -16,7 +16,12 @@ namespace StayBuddy_.net
 
         protected void register_Click(object sender, EventArgs e)
         {
+            Response.Redirect("UserLogin.aspx");
+        }
 
+        protected void loginLink_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("UserLogin.aspx");
         }
     }
 }

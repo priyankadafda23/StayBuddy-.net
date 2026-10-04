@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\Sem 5\\.Net\\stayBuddy\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|d:\\sem 5\\.net\\staybuddy\\registeruser.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:registeruser.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|d:\\sem 5\\.net\\staybuddy\\adminlogin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:adminlogin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|d:\\sem 5\\.net\\staybuddy\\.gitignore||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:.gitignore||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|d:\\sem 5\\.net\\staybuddy\\adminforgotpassword.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:adminforgotpassword.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|d:\\sem 5\\.net\\staybuddy\\userlogin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:userlogin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|d:\\sem 5\\.net\\staybuddy\\registeruser.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:registeruser.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|d:\\sem 5\\.net\\staybuddy\\userforgotpassword.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:userforgotpassword.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +26,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminLogin.aspx",
+              "DocumentMoniker": "D:\\Sem 5\\.Net\\stayBuddy\\AdminLogin.aspx",
+              "RelativeDocumentMoniker": "AdminLogin.aspx",
+              "ToolTip": "D:\\Sem 5\\.Net\\stayBuddy\\AdminLogin.aspx",
+              "RelativeToolTip": "AdminLogin.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-10-04T20:18:58.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminForgotPassword.aspx",
+              "DocumentMoniker": "D:\\Sem 5\\.Net\\stayBuddy\\AdminForgotPassword.aspx",
+              "RelativeDocumentMoniker": "AdminForgotPassword.aspx",
+              "ToolTip": "D:\\Sem 5\\.Net\\stayBuddy\\AdminForgotPassword.aspx",
+              "RelativeToolTip": "AdminForgotPassword.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-10-04T20:18:18.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserForgotPassword.aspx",
+              "DocumentMoniker": "D:\\Sem 5\\.Net\\stayBuddy\\UserForgotPassword.aspx",
+              "RelativeDocumentMoniker": "UserForgotPassword.aspx",
+              "ToolTip": "D:\\Sem 5\\.Net\\stayBuddy\\UserForgotPassword.aspx",
+              "RelativeToolTip": "UserForgotPassword.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-10-04T20:17:26.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegisterUser.aspx",
+              "DocumentMoniker": "D:\\Sem 5\\.Net\\stayBuddy\\RegisterUser.aspx",
+              "RelativeDocumentMoniker": "RegisterUser.aspx",
+              "ToolTip": "D:\\Sem 5\\.Net\\stayBuddy\\RegisterUser.aspx",
+              "RelativeToolTip": "RegisterUser.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-10-04T20:15:01.242Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -47,58 +99,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminLogin.aspx",
-              "DocumentMoniker": "D:\\Sem 5\\.Net\\stayBuddy\\AdminLogin.aspx",
-              "RelativeDocumentMoniker": "AdminLogin.aspx",
-              "ToolTip": "D:\\Sem 5\\.Net\\stayBuddy\\AdminLogin.aspx",
-              "RelativeToolTip": "AdminLogin.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-10-04T08:54:15.314Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": ".gitignore",
-              "DocumentMoniker": "D:\\Sem 5\\.Net\\stayBuddy\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "D:\\Sem 5\\.Net\\stayBuddy\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-10-04T08:48:45.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserLogin.aspx",
-              "DocumentMoniker": "D:\\Sem 5\\.Net\\stayBuddy\\UserLogin.aspx",
-              "RelativeDocumentMoniker": "UserLogin.aspx",
-              "ToolTip": "D:\\Sem 5\\.Net\\stayBuddy\\UserLogin.aspx",
-              "RelativeToolTip": "UserLogin.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-10-04T08:40:57.696Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegisterUser.aspx",
-              "DocumentMoniker": "D:\\Sem 5\\.Net\\stayBuddy\\RegisterUser.aspx",
-              "RelativeDocumentMoniker": "RegisterUser.aspx",
-              "ToolTip": "D:\\Sem 5\\.Net\\stayBuddy\\RegisterUser.aspx",
-              "RelativeToolTip": "RegisterUser.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-10-04T08:08:29.814Z",
-              "EditorCaption": ""
             }
           ]
         }

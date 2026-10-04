@@ -5,40 +5,36 @@
     <p>
         Create Account</p>
     <p>
-        Let&#39;s get you started</p>
+        Let&#39;s get you started on finding the best accomodation</p>
     <p>
         Full Name</p>
     <p>
-        <asp:TextBox ID="name" runat="server">Enter full name</asp:TextBox>
-        <asp:RequiredFieldValidator ID="nameRequired" runat="server" ControlToValidate="name" ErrorMessage="Name must be entered" ForeColor="Red"></asp:RequiredFieldValidator>
+        <asp:TextBox ID="name" placeholder="Enter your full name" runat="server"></asp:TextBox>
     </p>
     <p>
         Email</p>
     <p>
-        <asp:TextBox ID="email" runat="server">Enter email</asp:TextBox>
-        <asp:RegularExpressionValidator ID="validEmail" runat="server" ControlToValidate="email" ErrorMessage="Enter valid email" ForeColor="Red"></asp:RegularExpressionValidator>
+        <asp:TextBox ID="email" placeholder="Enter your email" runat="server"></asp:TextBox>
     </p>
     <p>
         Mobile No.</p>
     <p>
-        <asp:TextBox ID="contact" runat="server">Enter your number</asp:TextBox>
-        <asp:RangeValidator ID="validContact" runat="server" ControlToValidate="contact" ErrorMessage="Enter valid contact no." ForeColor="Red"></asp:RangeValidator>
+        <asp:TextBox ID="contact" placeholder="Enter your number" runat="server"></asp:TextBox>
     </p>
     <p>
         Password</p>
     <p>
-        <asp:TextBox ID="password" runat="server" OnTextChanged="TextBox4_TextChanged">Enter full password</asp:TextBox>
+        <asp:TextBox ID="password" placeholder="Enter your password" runat="server"></asp:TextBox>
     </p>
     <p>
         Confirm Password</p>
     <p>
-        <asp:TextBox ID="confirmPassword" runat="server">Enter full confirm password</asp:TextBox>
-        <asp:CompareValidator ID="confirmPasswordValid" runat="server" ControlToCompare="password" ControlToValidate="confirmPassword" ErrorMessage="Password does not match" ForeColor="Red"></asp:CompareValidator>
+        <asp:TextBox ID="confirmPassword" placeholder="Confirm your password" runat="server"></asp:TextBox>
     </p>
     <p>
         <asp:Button ID="register" runat="server" Text="Register" OnClick="register_Click" />
     </p>
     <p>
-        Already have an account? <asp:LinkButton ID="loginLink" runat="server">Login</asp:LinkButton>
+        Already have an account? <asp:LinkButton ID="loginLink" runat="server" OnClick="loginLink_Click1">Login</asp:LinkButton>
     </p>
 </asp:Content>

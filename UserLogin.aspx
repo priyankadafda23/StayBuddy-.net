@@ -9,23 +9,21 @@
     <p>
         Email</p>
     <p>
-        <asp:TextBox ID="emailLogin" runat="server"></asp:TextBox>
+        <asp:TextBox ID="emailLogin" placeholder="Enter your email" runat="server"></asp:TextBox>
     </p>
     <p>
         Password</p>
     <p>
-        <asp:TextBox ID="passwordLogin" runat="server"></asp:TextBox>
+        <asp:TextBox ID="passwordLogin" placeholder="Enter your password" runat="server"></asp:TextBox>
     </p>
     <p>
         <asp:CheckBox ID="rememberMe" runat="server" Text="Remember me" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:LinkButton ID="forgotPassword" runat="server">Forgot Password?</asp:LinkButton>
+        <asp:LinkButton ID="forgotPassword" runat="server" OnClick="forgotPassword_Click">Forgot Password?</asp:LinkButton>
     </p>
-    <p>
-        <asp:Button ID="Login" runat="server" Text="Login" />
-    </p>
+
     <p>
         Don&#39;t have an account?
-        <asp:LinkButton ID="signUp" runat="server">Sign Up</asp:LinkButton>
+        <asp:LinkButton ID="signUp" runat="server" OnClick="signUp_Click">Sign Up</asp:LinkButton>
     </p>
 </asp:Content>
