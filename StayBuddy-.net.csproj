@@ -76,6 +76,8 @@
     <Content Include="RegisterUser.aspx" />
     <Content Include="UserLogin.aspx" />
     <Content Include="AdminLogin.aspx" />
+    <Content Include="UserForgotPassword.aspx" />
+    <Content Include="AdminForgotPassword.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -116,6 +118,20 @@
     </Compile>
     <Compile Include="AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserForgotPassword.aspx.cs">
+      <DependentUpon>UserForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserForgotPassword.aspx.designer.cs">
+      <DependentUpon>UserForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForgotPassword.aspx.cs">
+      <DependentUpon>AdminForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminForgotPassword.aspx.designer.cs">
+      <DependentUpon>AdminForgotPassword.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
