@@ -75,6 +75,7 @@
     <Content Include="Web.config" />
     <Content Include="RegisterUser.aspx" />
     <Content Include="UserLogin.aspx" />
+    <Content Include="AdminLogin.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -108,6 +109,13 @@
     </Compile>
     <Compile Include="UserLogin.aspx.designer.cs">
       <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
