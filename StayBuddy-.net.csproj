@@ -73,6 +73,7 @@
     </Content>
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
+    <Content Include="RegisterUser.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -81,15 +82,24 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
     <Compile Include="Users.Master.cs">
       <DependentUpon>Users.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Users.Master.designer.cs">
       <DependentUpon>Users.Master</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterUser.aspx.cs">
+      <DependentUpon>RegisterUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterUser.aspx.designer.cs">
+      <DependentUpon>RegisterUser.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
