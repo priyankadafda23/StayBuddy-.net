@@ -1,9 +1,0 @@
-.vs/
-bin/
-obj/
-[Dd]ebug/
-[Rr]elease/
-*.user
-.gitignore
-*.slnx
-*.vsidx
