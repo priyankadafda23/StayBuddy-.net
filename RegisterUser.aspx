@@ -10,19 +10,19 @@
         Full Name</p>
     <p>
         <asp:TextBox ID="name" runat="server">Enter full name</asp:TextBox>
-        <asp:RequiredFieldValidator ID="nameRequired" runat="server" ControlToValidate="name" ErrorMessage="Name must be entered"></asp:RequiredFieldValidator>
+        <asp:RequiredFieldValidator ID="nameRequired" runat="server" ControlToValidate="name" ErrorMessage="Name must be entered" ForeColor="Red"></asp:RequiredFieldValidator>
     </p>
     <p>
         Email</p>
     <p>
         <asp:TextBox ID="email" runat="server">Enter email</asp:TextBox>
-        <asp:RegularExpressionValidator ID="validEmail" runat="server" ControlToValidate="email" ErrorMessage="Enter valid email"></asp:RegularExpressionValidator>
+        <asp:RegularExpressionValidator ID="validEmail" runat="server" ControlToValidate="email" ErrorMessage="Enter valid email" ForeColor="Red"></asp:RegularExpressionValidator>
     </p>
     <p>
         Mobile No.</p>
     <p>
         <asp:TextBox ID="contact" runat="server">Enter your number</asp:TextBox>
-        <asp:RangeValidator ID="validContact" runat="server" ControlToValidate="contact" ErrorMessage="Enter valid contact no."></asp:RangeValidator>
+        <asp:RangeValidator ID="validContact" runat="server" ControlToValidate="contact" ErrorMessage="Enter valid contact no." ForeColor="Red"></asp:RangeValidator>
     </p>
     <p>
         Password</p>
@@ -33,10 +33,10 @@
         Confirm Password</p>
     <p>
         <asp:TextBox ID="confirmPassword" runat="server">Enter full confirm password</asp:TextBox>
-        <asp:CompareValidator ID="confirmPasswordValid" runat="server" ControlToCompare="password" ControlToValidate="confirmPassword" ErrorMessage="Password does not match"></asp:CompareValidator>
+        <asp:CompareValidator ID="confirmPasswordValid" runat="server" ControlToCompare="password" ControlToValidate="confirmPassword" ErrorMessage="Password does not match" ForeColor="Red"></asp:CompareValidator>
     </p>
     <p>
-        <asp:Button ID="register" runat="server" Text="Register" />
+        <asp:Button ID="register" runat="server" Text="Register" OnClick="register_Click" />
     </p>
     <p>
         Already have an account? <asp:LinkButton ID="loginLink" runat="server">Login</asp:LinkButton>
