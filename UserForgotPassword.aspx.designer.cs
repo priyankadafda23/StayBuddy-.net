@@ -15,39 +15,39 @@ namespace StayBuddy_.net
     {
 
         /// <summary>
-        /// userCurrentPassword control.
+        /// CurrentPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox userCurrentPassword;
+        protected global::System.Web.UI.WebControls.TextBox CurrentPassword;
 
         /// <summary>
-        /// userNewPassword control.
+        /// NewPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox userNewPassword;
+        protected global::System.Web.UI.WebControls.TextBox NewPassword;
 
         /// <summary>
-        /// userResetPassword control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button userResetPassword;
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// backToLogin control.
+        /// HyperLink1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton backToLogin;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
     }
 }

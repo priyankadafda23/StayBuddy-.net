@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace StayBuddy_.net
 {
@@ -14,14 +9,32 @@ namespace StayBuddy_.net
 
         }
 
-        protected void forgotPassword_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("UserForgotPassword.aspx");
-        }
 
-        protected void signUp_Click(object sender, EventArgs e)
+        protected void btnLogin_Click(object sender, EventArgs e)
         {
-            Response.Redirect("RegisterUser.aspx");
+            string email = txtEmail.Text.Trim();
+
+            string password = txtPassword.Text;
+
+
+            // Check empty fields
+
+            if (string.IsNullOrEmpty(email) ||
+                string.IsNullOrEmpty(password))
+            {
+                Response.Write(
+                    "<script>alert('Please enter email and password.');</script>"
+                );
+
+                return;
+            }
+
+
+            // Login logic will be connected to database later
+
+            Response.Write(
+                "<script>alert('Login successful!');</script>"
+            );
         }
     }
 }

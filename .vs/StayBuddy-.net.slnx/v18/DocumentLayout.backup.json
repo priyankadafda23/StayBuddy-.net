@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "D:\\Sem 5\\.Net\\stayBuddy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|d:\\sem 5\\.net\\staybuddy\\userlogin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:userlogin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|d:\\sem 5\\.net\\staybuddy\\userforgotpassword.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:userforgotpassword.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|d:\\sem 5\\.net\\staybuddy\\userlogin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|D:\\Sem 5\\.Net\\stayBuddy\\users.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:users.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|d:\\sem 5\\.net\\staybuddy\\userforgotpassword.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:userforgotpassword.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|D:\\Sem 5\\.Net\\stayBuddy\\userlogin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:userlogin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|d:\\sem 5\\.net\\staybuddy\\registeruser.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:registeruser.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|D:\\Sem 5\\.Net\\stayBuddy\\registeruser.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:registeruser.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|D:\\Sem 5\\.Net\\stayBuddy\\userlogin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:userlogin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +38,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserForgotPassword.aspx.cs",
+              "DocumentMoniker": "D:\\Sem 5\\.Net\\stayBuddy\\UserForgotPassword.aspx.cs",
+              "RelativeDocumentMoniker": "UserForgotPassword.aspx.cs",
+              "ToolTip": "D:\\Sem 5\\.Net\\stayBuddy\\UserForgotPassword.aspx.cs",
+              "RelativeToolTip": "UserForgotPassword.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T07:45:28.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserForgotPassword.aspx",
+              "DocumentMoniker": "D:\\Sem 5\\.Net\\stayBuddy\\UserForgotPassword.aspx",
+              "RelativeDocumentMoniker": "UserForgotPassword.aspx",
+              "ToolTip": "D:\\Sem 5\\.Net\\stayBuddy\\UserForgotPassword.aspx*",
+              "RelativeToolTip": "UserForgotPassword.aspx*",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-10-05T07:42:48.502Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -42,28 +88,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "UserLogin.aspx.cs",
               "DocumentMoniker": "D:\\Sem 5\\.Net\\stayBuddy\\UserLogin.aspx.cs",
               "RelativeDocumentMoniker": "UserLogin.aspx.cs",
               "ToolTip": "D:\\Sem 5\\.Net\\stayBuddy\\UserLogin.aspx.cs",
               "RelativeToolTip": "UserLogin.aspx.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA0wBcAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-04T19:34:14.607Z",
+              "WhenOpened": "2026-10-05T06:02:20.945Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "UserLogin.aspx",
               "DocumentMoniker": "D:\\Sem 5\\.Net\\stayBuddy\\UserLogin.aspx",
               "RelativeDocumentMoniker": "UserLogin.aspx",
-              "ToolTip": "D:\\Sem 5\\.Net\\stayBuddy\\UserLogin.aspx*",
-              "RelativeToolTip": "UserLogin.aspx*",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "ToolTip": "D:\\Sem 5\\.Net\\stayBuddy\\UserLogin.aspx",
+              "RelativeToolTip": "UserLogin.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-10-04T19:16:45.983Z",
+              "WhenOpened": "2026-10-05T05:56:42.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegisterUser.aspx.cs",
+              "DocumentMoniker": "D:\\Sem 5\\.Net\\stayBuddy\\RegisterUser.aspx.cs",
+              "RelativeDocumentMoniker": "RegisterUser.aspx.cs",
+              "ToolTip": "D:\\Sem 5\\.Net\\stayBuddy\\RegisterUser.aspx.cs",
+              "RelativeToolTip": "RegisterUser.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T05:35:23.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Users.Master",
+              "DocumentMoniker": "D:\\Sem 5\\.Net\\stayBuddy\\Users.Master",
+              "RelativeDocumentMoniker": "Users.Master",
+              "ToolTip": "D:\\Sem 5\\.Net\\stayBuddy\\Users.Master",
+              "RelativeToolTip": "Users.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-10-04T20:21:00.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegisterUser.aspx",
+              "DocumentMoniker": "D:\\Sem 5\\.Net\\stayBuddy\\RegisterUser.aspx",
+              "RelativeDocumentMoniker": "RegisterUser.aspx",
+              "ToolTip": "D:\\Sem 5\\.Net\\stayBuddy\\RegisterUser.aspx",
+              "RelativeToolTip": "RegisterUser.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-10-04T20:15:01.242Z",
               "EditorCaption": ""
             }
           ]

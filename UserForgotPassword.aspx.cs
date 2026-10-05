@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace StayBuddy_.net
 {
@@ -14,14 +9,43 @@ namespace StayBuddy_.net
 
         }
 
-        protected void userResetPassword_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("UserLogin.aspx");
-        }
 
-        protected void backToLogin_Click(object sender, EventArgs e)
+        protected void btnResetPassword_Click(object sender, EventArgs e)
         {
-            Response.Redirect("UserLogin.aspx");
+            string currentPassword = CurrentPassword.Text;
+            string newPassword = NewPassword.Text;
+
+
+            // Check empty fields
+
+            if (string.IsNullOrWhiteSpace(currentPassword) ||
+                string.IsNullOrWhiteSpace(newPassword))
+            {
+                Response.Write(
+                    "<script>alert('Please fill all fields.');</script>"
+                );
+
+                return;
+            }
+
+
+            // Basic password length validation
+
+            if (newPassword.Length < 6)
+            {
+                Response.Write(
+                    "<script>alert('New password must contain at least 6 characters.');</script>"
+                );
+
+                return;
+            }
+
+
+            // Password update will be connected to database later
+
+            Response.Write(
+                "<script>alert('Password reset successfully!');</script>"
+            );
         }
     }
 }

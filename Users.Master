@@ -2,18 +2,1299 @@
 
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>StayBuddy</title>
+
+    <link href="CSS/auth.css" rel="stylesheet" />
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #2d2d2d;
+            background: #ffffff;
+        }
+
+
+        /* =========================================
+           HEADER
+        ========================================= */
+
+        .top-header {
+            height: 63px;
+
+            background: #ffffff;
+
+            display: flex;
+            align-items: center;
+
+            padding-left: 92px;
+
+            border-top: 2px solid #1c282b;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+
+        .logo {
+            display: flex;
+            align-items: center;
+
+            gap: 10px;
+
+            font-size: 28px;
+            font-weight: 700;
+
+            color: #203238;
+        }
+
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+
+            background: #19343a;
+
+            border-radius: 8px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 19px;
+        }
+
+
+        /* =========================================
+           REGISTRATION SECTION
+        ========================================= */
+
+        .register-section {
+            display: flex;
+
+            width: 100%;
+
+            min-height: 62px;
+        }
+
+
+        /* =========================================
+           LEFT FORM
+        ========================================= */
+
+        .register-form-container {
+            width: 43.8%;
+
+            background: #ffffff;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .register-form {
+            width: 310px;
+
+            margin-top: 2px;
+        }
+
+
+        .register-form h1 {
+            text-align: center;
+
+            font-size: 18px;
+
+            font-weight: 700;
+
+            margin-bottom: 5px;
+
+            color: #303030;
+        }
+
+
+        .subtitle {
+            text-align: center;
+
+            font-size: 10px;
+
+            color: #858585;
+
+            margin-bottom: 13px;
+        }
+
+
+        /* =========================================
+           REGISTRATION FORM FIELDS
+        ========================================= */
+
+        .form-group {
+            margin-bottom: 8px;
+        }
+
+
+        .form-group label {
+            display: block;
+
+            font-size: 9px;
+
+            font-weight: 600;
+
+            margin-bottom: 4px;
+
+            color: #333333;
+        }
+
+
+        .form-input {
+            width: 100%;
+
+            height: 22px;
+
+            border: none;
+
+            border-radius: 5px;
+
+            background: #eeeae1;
+
+            padding: 0 10px;
+
+            font-size: 9px;
+
+            color: #333333;
+
+            outline: none;
+        }
+
+
+        .form-input::placeholder {
+            color: #969696;
+        }
+
+
+        .form-input:focus {
+            background: #e9e4da;
+
+            outline: 1px solid #6d5848;
+        }
+
+
+        /* =========================================
+           REGISTER BUTTON
+        ========================================= */
+
+        .register-button {
+            width: 100%;
+
+            height: 27px;
+
+            margin-top: 5px;
+
+            border: none;
+
+            border-radius: 5px;
+
+            background: #6c5849;
+
+            color: #ffffff;
+
+            font-size: 9px;
+
+            font-weight: 600;
+
+            cursor: pointer;
+        }
+
+
+        .register-button:hover {
+            background: #5d4b3e;
+        }
+
+
+        /* =========================================
+           LOGIN TEXT
+        ========================================= */
+
+        .login-text {
+            text-align: center;
+
+            margin-top: 10px;
+
+            font-size: 9px;
+
+            color: #444444;
+        }
+
+
+        .login-text a {
+            color: #5e4b3d;
+
+            font-weight: 600;
+
+            text-decoration: none;
+        }
+
+
+        .login-text a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* =========================================
+           RIGHT INFORMATION PANEL
+        ========================================= */
+
+        .register-info {
+            width: 56.2%;
+
+            background: #142e34;
+
+            color: #ffffff;
+
+            display: flex;
+
+            align-items: center;
+
+            padding-left: 46px;
+        }
+
+
+        .info-content {
+            width: 400px;
+        }
+
+
+        .info-content h2 {
+            font-size: 22px;
+
+            margin-bottom: 14px;
+
+            font-weight: 700;
+        }
+
+
+        .info-content p {
+            font-size: 10px;
+
+            line-height: 1.6;
+
+            color: #e0e5e6;
+
+            max-width: 380px;
+        }
+
+
+        /* =========================================
+           FORGOT PASSWORD PAGE
+        ========================================= */
+
+        .forgot-page {
+            min-height: calc(100vh - 63px);
+
+            background: #f5f5f5;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            padding: 50px 20px;
+        }
+
+
+        /* =========================================
+           FORGOT PASSWORD CARD
+        ========================================= */
+
+        .forgot-card {
+            width: 540px;
+
+            background: #ffffff;
+
+            border: 1px solid #dddddd;
+
+            border-radius: 22px;
+
+            padding: 46px 46px 42px;
+
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+            text-align: center;
+        }
+
+
+        /* =========================================
+           KEY ICON
+        ========================================= */
+
+        .key-icon {
+            width: 66px;
+            height: 66px;
+
+            margin: 0 auto 18px;
+
+            border-radius: 50%;
+
+            background: #e9f5e9;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .key-icon svg {
+            width: 31px;
+            height: 31px;
+
+            stroke: #5d4939;
+
+            stroke-width: 2;
+
+            fill: none;
+        }
+
+
+        /* =========================================
+           FORGOT PASSWORD HEADING
+        ========================================= */
+
+        .forgot-card h1 {
+            margin: 0;
+
+            font-size: 29px;
+
+            font-weight: 700;
+
+            color: #262626;
+        }
+
+
+        .forgot-subtitle {
+            margin-top: 12px;
+
+            margin-bottom: 38px;
+
+            font-size: 16px;
+
+            color: #777777;
+        }
+
+
+        /* =========================================
+           FORGOT PASSWORD FORM
+        ========================================= */
+
+        .forgot-form {
+            text-align: left;
+        }
+
+
+        .forgot-form-group {
+            margin-bottom: 25px;
+        }
+
+
+        .forgot-form-group label {
+            display: block;
+
+            margin-bottom: 9px;
+
+            font-size: 15px;
+
+            font-weight: 600;
+
+            color: #292929;
+        }
+
+
+        .forgot-input {
+            width: 100%;
+
+            height: 48px;
+
+            padding: 0 17px;
+
+            border: 1px solid #d9d9d9;
+
+            border-radius: 9px;
+
+            background: #f5f5f5;
+
+            color: #333333;
+
+            font-size: 16px;
+
+            font-family: inherit;
+
+            outline: none;
+
+            transition: 0.2s;
+        }
+
+
+        .forgot-input::placeholder {
+            color: #777777;
+        }
+
+
+        .forgot-input:focus {
+            border-color: #6b5543;
+
+            background: #ffffff;
+
+            box-shadow: 0 0 0 2px rgba(107, 85, 67, 0.08);
+        }
+
+
+        /* =========================================
+           RESET PASSWORD BUTTON
+        ========================================= */
+
+        .reset-button {
+            width: 100%;
+
+            height: 56px;
+
+            margin-top: 11px;
+
+            border: none;
+
+            border-radius: 10px;
+
+            background: #5e4736;
+
+            color: #ffffff;
+
+            font-size: 17px;
+
+            font-weight: 700;
+
+            font-family: inherit;
+
+            cursor: pointer;
+
+            transition: background 0.2s;
+        }
+
+
+        .reset-button:hover {
+            background: #4f3c2e;
+        }
+
+
+        /* =========================================
+           BACK TO LOGIN
+        ========================================= */
+
+        .back-login {
+            display: block;
+
+            text-align: center;
+
+            margin-top: 20px;
+
+            color: #5e4736;
+
+            font-size: 15px;
+
+            font-weight: 600;
+
+            text-decoration: none;
+        }
+
+
+        .back-login:hover {
+            text-decoration: underline;
+        }
+        /* =========================================
+   LOGIN PAGE
+========================================= */
+
+.login-section {
+    display: flex;
+
+    width: 100%;
+
+    min-height: 627px;
+}
+
+
+/* =========================================
+   LEFT INFORMATION PANEL
+========================================= */
+
+.login-info {
+    width: 58.6%;
+
+    background: #142e34;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 88px;
+}
+
+
+.login-info-content {
+    width: 700px;
+}
+
+
+.login-info-content h2 {
+    font-size: 40px;
+
+    line-height: 1.25;
+
+    font-weight: 700;
+
+    margin-bottom: 27px;
+
+    color: #ffffff;
+}
+
+
+.login-info-content p {
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    color: #e1e7e8;
+
+    max-width: 700px;
+}
+
+
+/* =========================================
+   RIGHT LOGIN FORM
+========================================= */
+
+.login-form-container {
+    width: 41.4%;
+
+    background: #ffffff;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.login-form {
+    width: 490px;
+
+    max-width: 80%;
+}
+
+
+/* =========================================
+   LOGIN HEADING
+========================================= */
+
+.login-form h1 {
+    text-align: center;
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+    color: #333333;
+
+    margin-bottom: 8px;
+}
+
+
+.login-subtitle {
+    text-align: center;
+
+    font-size: 17px;
+
+    color: #7b7b7b;
+
+    margin-bottom: 38px;
+}
+
+
+/* =========================================
+   LOGIN FORM GROUP
+========================================= */
+
+.login-form-group {
+    margin-bottom: 23px;
+}
+
+
+.login-form-group label {
+    display: block;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #333333;
+
+    margin-bottom: 9px;
+}
+
+
+/* =========================================
+   LOGIN INPUT
+========================================= */
+
+.login-input {
+    width: 100%;
+
+    height: 51px;
+
+    padding: 0 17px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #eeeae1;
+
+    color: #333333;
+
+    font-size: 16px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    outline: none;
+}
+
+
+.login-input::placeholder {
+    color: #858585;
+}
+
+
+.login-input:focus {
+    background: #e9e4da;
+
+    outline: 1px solid #6d5848;
+}
+
+
+/* =========================================
+   PASSWORD WRAPPER
+========================================= */
+
+.password-wrapper {
+    position: relative;
+
+    width: 100%;
+}
+
+
+.password-wrapper .login-input {
+    padding-right: 50px;
+}
+
+
+.password-eye {
+    position: absolute;
+
+    right: 17px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    cursor: pointer;
+
+    font-size: 17px;
+
+    color: #777777;
+
+    user-select: none;
+}
+
+
+/* =========================================
+   REMEMBER ME + FORGOT PASSWORD
+========================================= */
+
+.login-options {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: -2px;
+
+    margin-bottom: 35px;
+}
+
+
+.remember-container {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    font-size: 15px;
+
+    color: #454545;
+}
+
+
+.remember-checkbox {
+    width: 20px;
+
+    height: 20px;
+
+    accent-color: #6c5849;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   FORGOT PASSWORD LINK
+========================================= */
+
+.forgot-link {
+    color: #6c5849;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.login-button {
+    width: 100%;
+
+    height: 53px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #6c5849;
+
+    color: #ffffff;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    cursor: pointer;
+}
+
+
+.login-button:hover {
+    background: #5d4b3e;
+}
+
+
+/* =========================================
+   SIGN UP TEXT
+========================================= */
+
+.signup-text {
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-size: 15px;
+
+    color: #454545;
+}
+
+
+.signup-link {
+    color: #6c5849;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   LOGIN RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .login-section {
+        flex-direction: column;
+    }
+
+
+    .login-info {
+        width: 100%;
+
+        min-height: 300px;
+
+        padding: 50px;
+    }
+
+
+    .login-form-container {
+        width: 100%;
+
+        padding: 60px 20px;
+
+        min-height: 500px;
+    }
+
+
+    .login-form {
+        max-width: 500px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .login-info {
+        padding: 40px 25px;
+    }
+
+
+    .login-info-content h2 {
+        font-size: 28px;
+    }
+
+
+    .login-info-content p {
+        font-size: 14px;
+    }
+
+
+    .login-form h1 {
+        font-size: 27px;
+    }
+
+
+    .login-subtitle {
+        font-size: 14px;
+    }
+
+
+    .login-options {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+}
+
+        /* =========================================
+           FOOTER
+        ========================================= */
+
+        .footer {
+            background: #1c282b;
+
+            min-height: 168px;
+
+            color: #ffffff;
+
+            padding: 35px 45px 0 25px;
+        }
+
+
+        .footer-content {
+            display: grid;
+
+            grid-template-columns: 1.7fr 1fr 1fr 1fr;
+
+            gap: 40px;
+
+            padding-bottom: 23px;
+
+            border-bottom: 1px solid #354144;
+        }
+
+
+        /* =========================================
+           FOOTER LOGO
+        ========================================= */
+
+        .footer-logo {
+            display: flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            margin-bottom: 12px;
+        }
+
+
+        .footer-logo-icon {
+            width: 20px;
+            height: 20px;
+
+            background: #122f35;
+
+            border-radius: 4px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 10px;
+        }
+
+
+        .about p {
+            max-width: 180px;
+
+            font-size: 9px;
+
+            line-height: 1.5;
+
+            color: #aeb8ba;
+        }
+
+
+        /* =========================================
+           FOOTER COLUMNS
+        ========================================= */
+
+        .footer-column h4 {
+            font-size: 9px;
+
+            margin-bottom: 12px;
+
+            font-weight: 700;
+        }
+
+
+        .footer-column a {
+            display: block;
+
+            font-size: 9px;
+
+            color: #929d9f;
+
+            text-decoration: none;
+
+            margin-bottom: 9px;
+        }
+
+
+        .footer-column a:hover {
+            color: #ffffff;
+        }
+
+
+        /* =========================================
+           COPYRIGHT
+        ========================================= */
+
+        .footer-bottom {
+            padding-top: 20px;
+
+            font-size: 9px;
+
+            color: #b0b8b9;
+        }
+
+
+        /* =========================================
+           RESPONSIVE
+        ========================================= */
+
+        @media (max-width: 768px) {
+
+            .register-section {
+                flex-direction: column;
+            }
+
+
+            .register-form-container {
+                width: 100%;
+
+                padding: 40px 20px;
+            }
+
+
+            .register-form {
+                width: 100%;
+
+                max-width: 350px;
+            }
+
+
+            .register-info {
+                width: 100%;
+
+                padding: 50px 30px;
+
+                min-height: 250px;
+            }
+
+
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+
+                gap: 30px;
+            }
+
+
+            /* Forgot Password */
+
+            .forgot-page {
+                padding: 30px 15px;
+            }
+
+
+            .forgot-card {
+                width: 100%;
+
+                max-width: 540px;
+
+                padding: 35px 25px;
+            }
+
+
+            .forgot-card h1 {
+                font-size: 24px;
+            }
+
+
+            .forgot-subtitle {
+                font-size: 14px;
+            }
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+
+            .top-header {
+                padding-left: 15px;
+            }
+
+
+            .footer {
+                padding-left: 20px;
+
+                padding-right: 20px;
+            }
+
+
+            .forgot-card {
+                border-radius: 15px;
+
+                padding: 30px 20px;
+            }
+
+
+            .forgot-card h1 {
+                font-size: 22px;
+            }
+
+
+            .forgot-input {
+                height: 45px;
+
+                font-size: 14px;
+            }
+
+
+            .reset-button {
+                height: 50px;
+
+                font-size: 15px;
+            }
+
+        }
+
+    </style>
+
 </head>
+
+
 <body>
-    <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+
+<form id="form1" runat="server">
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="top-header">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                🏠
+            </div>
+
+            <span>StayBuddy</span>
+
         </div>
-    </form>
+
+    </header>
+
+
+    <!-- ================= PAGE CONTENT ================= -->
+
+    <main>
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+
+            <!-- About -->
+
+            <div class="footer-column about">
+
+                <div class="footer-logo">
+
+                    <div class="footer-logo-icon">
+                        🏠
+                    </div>
+
+                    <span>StayBuddy</span>
+
+                </div>
+
+                <p>
+                    Find your perfect stays for students and
+                    working professionals.
+                </p>
+
+            </div>
+
+
+            <!-- Discover -->
+
+            <div class="footer-column">
+
+                <h4>Discover</h4>
+
+                <a href="#">Paying Guest (PG)</a>
+
+                <a href="#">Hostels</a>
+
+                <a href="#">Rooms</a>
+
+            </div>
+
+
+            <!-- Support -->
+
+            <div class="footer-column">
+
+                <h4>Support</h4>
+
+                <a href="#">About StayBuddy</a>
+
+                <a href="#">FAQ</a>
+
+                <a href="#">Privacy Policy</a>
+
+            </div>
+
+
+            <!-- Contact -->
+
+            <div class="footer-column">
+
+                <h4>Contact Us</h4>
+
+                <a href="mailto:support@staybuddy.com">
+                    support@staybuddy.com
+                </a>
+
+                <a href="tel:+919944582631">
+                    +91 99445 82631
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 StayBuddy. Made with ❤️ in India. All rights reserved.
+            </span>
+
+        </div>
+
+    </footer>
+
+
+</form>
+
 </body>
+
 </html>
