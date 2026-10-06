@@ -50,7 +50,8 @@
                         ID="rblGender"
                         runat="server"
                         RepeatLayout="Flow"
-                        RepeatDirection="Horizontal">
+                        RepeatDirection="Vertical"
+                        CssClass="radio-list">
                         <asp:ListItem Value="Male Only" Selected="True">Male Only</asp:ListItem>
                         <asp:ListItem Value="Female Only">Female Only</asp:ListItem>
                         <asp:ListItem Value="Co-living">Co-living</asp:ListItem>
@@ -84,7 +85,8 @@
             <asp:RadioButtonList
                 ID="rblMeals"
                 runat="server"
-                RepeatLayout="Flow">
+                RepeatLayout="Flow"
+                CssClass="radio-list">
                 <asp:ListItem Value="Meals included 3 times a day" Selected="True">3 Times Meals Included in Rent</asp:ListItem>
                 <asp:ListItem Value="Meals included 2 times a day">2 Times Meals Included in Rent</asp:ListItem>
                 <asp:ListItem Value="Meals included 1 time a day">1 Time Meal Included in Rent</asp:ListItem>

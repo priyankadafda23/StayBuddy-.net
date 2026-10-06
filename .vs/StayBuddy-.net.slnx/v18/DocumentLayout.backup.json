@@ -1,14 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Sem 5\\.Net\\stayBuddy\\",
+  "WorkspaceRootPath": "C:\\Users\\priya\\Desktop\\RKU\\Sem5\\Projects\\StayBuddy-.net\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|d:\\sem 5\\.net\\staybuddy\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|c:\\users\\priya\\desktop\\rku\\sem5\\projects\\staybuddy-.net\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|c:\\users\\priya\\desktop\\rku\\sem5\\projects\\staybuddy-.net\\models\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:models\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|c:\\users\\priya\\desktop\\rku\\sem5\\projects\\staybuddy-.net\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|c:\\users\\priya\\desktop\\rku\\sem5\\projects\\staybuddy-.net\\registeruser.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:registeruser.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|c:\\users\\priya\\desktop\\rku\\sem5\\projects\\staybuddy-.net\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|d:\\sem 5\\.net\\staybuddy\\admin\\adminlogin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:admin\\adminlogin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|c:\\users\\priya\\desktop\\rku\\sem5\\projects\\staybuddy-.net\\search.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:search.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|c:\\users\\priya\\desktop\\rku\\sem5\\projects\\staybuddy-.net\\resetpassword.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8F19C8E9-3BB5-4B7B-B8F4-200D0E91F2CD}|StayBuddy-.net.csproj|solutionrelative:resetpassword.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,52 +38,109 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "site.css",
-              "DocumentMoniker": "D:\\Sem 5\\.Net\\stayBuddy\\Content\\site.css",
-              "RelativeDocumentMoniker": "Content\\site.css",
-              "ToolTip": "D:\\Sem 5\\.Net\\stayBuddy\\Content\\site.css",
-              "RelativeToolTip": "Content\\site.css",
-              "ViewState": "AgIAAGkDAAAAAAAAAAAiwI0AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-10-06T16:34:53.739Z",
-              "EditorCaption": ""
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AdminLogin.aspx",
-              "DocumentMoniker": "D:\\Sem 5\\.Net\\stayBuddy\\Admin\\AdminLogin.aspx",
-              "RelativeDocumentMoniker": "Admin\\AdminLogin.aspx",
-              "ToolTip": "D:\\Sem 5\\.Net\\stayBuddy\\Admin\\AdminLogin.aspx",
-              "RelativeToolTip": "Admin\\AdminLogin.aspx",
+              "Title": "Store.cs",
+              "DocumentMoniker": "C:\\Users\\priya\\Desktop\\RKU\\Sem5\\Projects\\StayBuddy-.net\\Models\\Store.cs",
+              "RelativeDocumentMoniker": "Models\\Store.cs",
+              "ToolTip": "C:\\Users\\priya\\Desktop\\RKU\\Sem5\\Projects\\StayBuddy-.net\\Models\\Store.cs",
+              "RelativeToolTip": "Models\\Store.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAQwFcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T20:19:43.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Default.aspx",
+              "DocumentMoniker": "C:\\Users\\priya\\Desktop\\RKU\\Sem5\\Projects\\StayBuddy-.net\\Default.aspx",
+              "RelativeDocumentMoniker": "Default.aspx",
+              "ToolTip": "C:\\Users\\priya\\Desktop\\RKU\\Sem5\\Projects\\StayBuddy-.net\\Default.aspx",
+              "RelativeToolTip": "Default.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-10-06T14:10:51.698Z",
+              "WhenOpened": "2026-10-06T20:19:22.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Search.aspx",
+              "DocumentMoniker": "C:\\Users\\priya\\Desktop\\RKU\\Sem5\\Projects\\StayBuddy-.net\\Search.aspx",
+              "RelativeDocumentMoniker": "Search.aspx",
+              "ToolTip": "C:\\Users\\priya\\Desktop\\RKU\\Sem5\\Projects\\StayBuddy-.net\\Search.aspx",
+              "RelativeToolTip": "Search.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-10-06T20:13:07.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ResetPassword.aspx",
+              "DocumentMoniker": "C:\\Users\\priya\\Desktop\\RKU\\Sem5\\Projects\\StayBuddy-.net\\ResetPassword.aspx",
+              "RelativeDocumentMoniker": "ResetPassword.aspx",
+              "ToolTip": "C:\\Users\\priya\\Desktop\\RKU\\Sem5\\Projects\\StayBuddy-.net\\ResetPassword.aspx",
+              "RelativeToolTip": "ResetPassword.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-10-06T20:11:42.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.aspx",
+              "DocumentMoniker": "C:\\Users\\priya\\Desktop\\RKU\\Sem5\\Projects\\StayBuddy-.net\\Login.aspx",
+              "RelativeDocumentMoniker": "Login.aspx",
+              "ToolTip": "C:\\Users\\priya\\Desktop\\RKU\\Sem5\\Projects\\StayBuddy-.net\\Login.aspx",
+              "RelativeToolTip": "Login.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-10-06T20:11:23.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterUser.aspx",
+              "DocumentMoniker": "C:\\Users\\priya\\Desktop\\RKU\\Sem5\\Projects\\StayBuddy-.net\\RegisterUser.aspx",
+              "RelativeDocumentMoniker": "RegisterUser.aspx",
+              "ToolTip": "C:\\Users\\priya\\Desktop\\RKU\\Sem5\\Projects\\StayBuddy-.net\\RegisterUser.aspx",
+              "RelativeToolTip": "RegisterUser.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-10-06T20:07:35.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\priya\\Desktop\\RKU\\Sem5\\Projects\\StayBuddy-.net\\Content\\site.css",
+              "RelativeDocumentMoniker": "Content\\site.css",
+              "ToolTip": "C:\\Users\\priya\\Desktop\\RKU\\Sem5\\Projects\\StayBuddy-.net\\Content\\site.css",
+              "RelativeToolTip": "Content\\site.css",
+              "ViewState": "AgIAAKIFAAAAAAAAAAAwwMMFAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-10-06T19:32:43.924Z",
               "EditorCaption": ""
             }
           ]

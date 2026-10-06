@@ -24,14 +24,14 @@ AutoEventWireup="true" CodeBehind="Search.aspx.cs" Inherits="StayBuddy.Search"
         Text="15000"
       ></asp:TextBox>
       <label>Room Type</label
-      ><asp:CheckBoxList ID="chkTypes" runat="server" RepeatLayout="Flow"
+      ><asp:CheckBoxList ID="chkTypes" runat="server" RepeatLayout="Flow" CssClass="filter-list"
         ><asp:ListItem Value="Co-living">Co-Living</asp:ListItem
         ><asp:ListItem Value="Single">Single Bed</asp:ListItem
         ><asp:ListItem Value="Double">Double Sharing</asp:ListItem
         ><asp:ListItem Value="AC">AC Room</asp:ListItem></asp:CheckBoxList
       >
       <label>Meals Included</label
-      ><asp:RadioButtonList ID="rblMeals" runat="server" RepeatLayout="Flow"
+      ><asp:RadioButtonList ID="rblMeals" runat="server" RepeatLayout="Flow" CssClass="filter-list"
         ><asp:ListItem Value="" Selected="True">Any</asp:ListItem
         ><asp:ListItem Value="3 times">Yes, 3 times daily</asp:ListItem
         ><asp:ListItem Value="2 times">2 meals daily</asp:ListItem

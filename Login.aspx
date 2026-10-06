@@ -41,7 +41,7 @@ AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="StayBuddy.Login" %>
         />
         <p class="c">
           Don't have an account?
-          <a runat="server" href="~/Register.aspx">Sign up</a>
+          <a runat="server" href="~/RegisterUser.aspx">Sign up</a>
         </p>
       </div>
     </div>

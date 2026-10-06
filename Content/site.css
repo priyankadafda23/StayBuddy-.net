@@ -1,26 +1,30 @@
 /* =========================================================
-   STAYBUDDY - SHARED STYLES
-   Clean, beginner-friendly CSS for the Admin area
-========================================================= */
+   STAYBUDDY - SHARED CSS
+   USER DASHBOARD + ADMIN DASHBOARD
+   ========================================================= */
 
+/* ---------- COMMON VARIABLES ---------- */
 :root {
-    --navy: #062d35;
+    --teal: #1b2f35;
+    --navy: #0b2a33;
     --navy-dark: #05272e;
-    --brown: #5b402d;
+    --brown: #5c4033;
     --brown-dark: #4d3525;
-    --orange: #ff4b22;
-    --orange-light: #fff0eb;
+    --cream: #efe8dc;
+    --bg: #f5f6f5;
     --page-bg: #f4f7f5;
+    --orange: #f2542d;
+    --orange-light: #fff0eb;
+    --footer: #212c2d;
+    --muted: #7a8484;
+    --text: #1d2323;
     --white: #ffffff;
-    --cream: #eee9df;
-    --text: #222827;
-    --muted: #6f7977;
     --border: #e0e8e4;
     --green-light: #e9f3ed;
     --green: #3d6f4b;
-    --footer: #202a2c;
 }
 
+/* ---------- RESET ---------- */
 * {
     box-sizing: border-box;
 }
@@ -30,12 +34,8 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100%;
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
     color: var(--text);
-}
-
-body {
-    background: var(--page-bg);
 }
 
 a {
@@ -51,97 +51,456 @@ textarea {
 }
 
 /* =========================================================
-   COMMON CONTROLS
-========================================================= */
+   USER DASHBOARD
+   ========================================================= */
 
-input,
-select,
-textarea {
-    width: 100%;
-    border: 1px solid var(--border);
-    border-radius: 9px;
-    background: var(--white);
-    padding: 11px 13px;
-    margin: 5px 0 14px;
-    outline: none;
+body {
+    background: var(--bg);
 }
 
-    input:focus,
-    select:focus,
-    textarea:focus {
-        border-color: #b9c9c2;
-        box-shadow: 0 0 0 2px rgba(91, 64, 45, 0.08);
-    }
+.topbar {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 12px 40px;
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+}
 
-    input[type="checkbox"],
-    input[type="radio"] {
-        width: auto;
-        margin: 0 7px 0 0;
-    }
+.brand {
+    font-weight: 700;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
 
-label {
-    display: block;
+.logo {
+    background: #1d2323;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0 4px;
+}
+
+.loc {
+    font-size: 12px;
+    margin-left: 12px;
+}
+
+.topbar nav {
+    margin-left: auto;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.topbar nav a.active {
+    font-weight: 700;
+}
+
+.btn-dark {
+    background: #1d2323;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+main {
+    min-height: 70vh;
+}
+
+.hero {
+    background: var(--teal);
+    color: #fff;
+    padding: 56px 40px 70px;
+}
+
+.hero h1 {
+    font-size: 34px;
+    margin: 0 0 12px;
+}
+
+.hero p {
+    max-width: 480px;
     font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 4px;
+    opacity: .85;
 }
 
-.btn {
-    width: 100%;
-    border: 0;
-    border-radius: 9px;
-    padding: 13px 18px;
-    background: var(--brown);
-    color: var(--white);
-    cursor: pointer;
-    font-weight: 700;
+.wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 20px;
 }
 
-    .btn:hover {
-        background: var(--brown-dark);
-    }
-
-.btn-or {
-    display: inline-block;
-    border: 0;
-    border-radius: 9px;
-    padding: 11px 20px;
-    background: var(--orange);
-    color: var(--white);
-    cursor: pointer;
-    font-weight: 700;
+.cats {
+    display: flex;
+    gap: 12px;
+    margin: 12px 0 28px;
 }
 
-    .btn-or:hover {
-        background: #e9431e;
-    }
+.cats a {
+    flex: 1;
+    background: #fff;
+    padding: 10px 14px;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+}
 
-    .btn-or.wide {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
+.cats a.on {
+    background: #e6f1ea;
+    border-color: #9bc2a6;
+}
 
-.msg {
-    display: block;
+.grid3,
+.grid2 {
+    display: grid;
+    gap: 18px;
+}
+
+.grid3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px #0001;
+}
+
+.img {
+    height: 150px;
+    background: #cfd5d2 center/cover;
+    position: relative;
+}
+
+.cb {
+    padding: 12px;
+}
+
+.cb h4 {
+    margin: 0 0 4px;
+}
+
+.cb ul {
+    list-style: none;
+    padding: 0;
     margin: 8px 0;
-    color: #c0392b;
-    font-size: 13px;
-    text-align: center;
+    font-size: 12px;
 }
-
-    .msg.ok {
-        color: var(--green);
-    }
 
 .muted {
     color: var(--muted);
+    font-size: 11px;
 }
+
+.tag {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #1d2323;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.tag.g {
+    left: auto;
+    right: 44px;
+    background: #fde2ea;
+    color: #c2185b;
+}
+
+.heart {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    background: #fff;
+    border: 0;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.heart.on {
+    color: #e53950;
+}
+
+.img form {
+    margin: 0;
+}
+
+.footer {
+    background: var(--footer);
+    color: #cdd5d5;
+    padding: 28px 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 20px;
+    font-size: 12px;
+}
+
+.footer a,
+.footer p {
+    display: block;
+    margin: 6px 0;
+    opacity: .8;
+}
+
+.footer small {
+    grid-column: 1 / -1;
+    border-top: 1px solid #ffffff22;
+    padding-top: 14px;
+}
+
+/* User-only controls */
+body:not(.admin-app):not(.admin-login) input,
+body:not(.admin-app):not(.admin-login) select,
+body:not(.admin-app):not(.admin-login) textarea {
+    width: 100%;
+    padding: 9px 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background: var(--cream);
+    margin: 4px 0 12px;
+}
+
+body:not(.admin-app):not(.admin-login) input[type="checkbox"],
+body:not(.admin-app):not(.admin-login) input[type="radio"] {
+    width: auto;
+    margin: 0 6px 0 0;
+}
+
+body:not(.admin-app):not(.admin-login) label {
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+}
+
+label.inl {
+    font-weight: 400;
+    margin: 4px 0;
+}
+
+.split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 420px;
+}
+
+.split.rev .side {
+    order: 2;
+}
+
+.side {
+    background: var(--teal);
+    color: #fff;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.side h1 {
+    font-size: 26px;
+}
+
+.formside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: #fff;
+}
+
+.fbox {
+    width: 100%;
+    max-width: 340px;
+}
+
+.fbox h2 {
+    margin: 0 0 4px;
+    text-align: center;
+}
+
+.fbox > small {
+    display: block;
+    text-align: center;
+}
+
+.fbox.white {
+    background: #fff;
+    box-shadow: 0 2px 12px #0002;
+    border-radius: 12px;
+    padding: 28px;
+}
+
+.center {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.c {
+    text-align: center;
+}
+
+.ic {
+    text-align: center;
+    color: #2e7d52;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0 14px;
+    font-size: 12px;
+}
+
+.sr {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    gap: 20px;
+}
+
+.filters {
+    background: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    align-self: start;
+}
+
+.fh {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.found {
+    text-align: right;
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+.prof {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.pcard,
+.panel {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 1px 4px #0001;
+}
+
+.pcard {
+    text-align: center;
+}
+
+.pcard h3 {
+    margin: 8px 0 4px;
+}
+
+.avatar {
+    display: inline-flex;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #f4c15d;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.avatar.s {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+}
+
+.item {
+    display: block;
+    background: var(--bg);
+    padding: 12px;
+    border-radius: 8px;
+    margin: 8px 0;
+}
+
+.item small {
+    display: block;
+    color: var(--muted);
+}
+
+.ph a {
+    margin-right: 8px;
+}
+
+.cam {
+    margin: 12px 0;
+}
+
+.faq {
+    background: var(--bg);
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 8px 0;
+}
+
+.faq summary {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* User buttons */
+.btn {
+    width: 100%;
+    background: var(--brown);
+    color: #fff;
+    border: 0;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: var(--brown-dark);
+}
+
+.btn.sm {
+    padding: 7px;
+}
+
+.btn.dark {
+    background: #1d2323;
+    margin-top: 10px;
+}
+
+.btn-brown {
+    background: var(--brown);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 5px;
+}
+
+
 
 /* =========================================================
    ADMIN LOGIN
-   This page intentionally does NOT use the admin sidebar.
-========================================================= */
+   ========================================================= */
 
 body.admin-login {
     min-height: 100vh;
@@ -150,6 +509,7 @@ body.admin-login {
 
 .admin-login form {
     min-height: 100vh;
+    margin: 0;
 }
 
 .admin-login .split {
@@ -167,26 +527,26 @@ body.admin-login {
     justify-content: center;
 }
 
-    .admin-login .side .brand {
-        position: absolute;
-        top: 27px;
-        left: 22px;
-        font-size: 28px;
-        font-weight: 700;
-    }
+.admin-login .side .brand {
+    position: absolute;
+    top: 27px;
+    left: 22px;
+    font-size: 28px;
+    font-weight: 700;
+}
 
-    .admin-login .side h1 {
-        margin: 0 0 25px;
-        font-size: 40px;
-        line-height: 1.25;
-        max-width: 700px;
-    }
+.admin-login .side h1 {
+    margin: 0 0 25px;
+    font-size: 40px;
+    line-height: 1.25;
+    max-width: 700px;
+}
 
-    .admin-login .side p {
-        margin: 0;
-        font-size: 18px;
-        color: #e2ebeb;
-    }
+.admin-login .side p {
+    margin: 0;
+    font-size: 18px;
+    color: #e2ebeb;
+}
 
 .admin-login .formside {
     display: flex;
@@ -201,32 +561,33 @@ body.admin-login {
     max-width: 500px;
 }
 
-    .admin-login .fbox h2 {
-        margin: 0 0 5px;
-        text-align: center;
-        font-size: 32px;
-    }
+.admin-login .fbox h2 {
+    margin: 0 0 5px;
+    text-align: center;
+    font-size: 32px;
+}
 
-    .admin-login .fbox > .muted {
-        display: block;
-        text-align: center;
-        margin-bottom: 40px;
-        font-size: 16px;
-    }
+.admin-login .fbox > .muted {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
 
-    .admin-login .fbox label {
-        font-size: 15px;
-    }
+.admin-login .fbox label {
+    font-size: 15px;
+}
 
-    .admin-login .fbox input[type="text"],
-    .admin-login .fbox input[type="email"],
-    .admin-login .fbox input[type="password"] {
-        height: 52px;
-        background: var(--cream);
-        border: 0;
-        font-size: 16px;
-        margin-bottom: 20px;
-    }
+.admin-login .fbox input[type="text"],
+.admin-login .fbox input[type="email"],
+.admin-login .fbox input[type="password"] {
+    width: 100%;
+    height: 52px;
+    background: var(--cream);
+    border: 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
 
 .admin-login .row {
     display: flex;
@@ -235,19 +596,19 @@ body.admin-login {
     margin: 2px 0 30px;
 }
 
-    .admin-login .row .inl {
-        display: flex;
-        align-items: center;
-        margin: 0;
-        font-size: 15px;
-        font-weight: 400;
-    }
+.admin-login .row .inl {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+}
 
-    .admin-login .row a {
-        color: var(--brown);
-        font-weight: 700;
-        font-size: 15px;
-    }
+.admin-login .row a {
+    color: var(--brown);
+    font-weight: 700;
+    font-size: 15px;
+}
 
 .admin-login .btn {
     height: 52px;
@@ -255,8 +616,8 @@ body.admin-login {
 }
 
 /* =========================================================
-   ADMIN APPLICATION LAYOUT
-========================================================= */
+   ADMIN APPLICATION
+   ========================================================= */
 
 body.admin-app {
     min-height: 100vh;
@@ -265,6 +626,7 @@ body.admin-app {
 
 .admin-app form {
     min-height: 100vh;
+    margin: 0;
 }
 
 .admin-app .sb {
@@ -281,39 +643,39 @@ body.admin-app {
     z-index: 10;
 }
 
-    .admin-app .sb .brand {
-        color: var(--white);
-        font-size: 28px;
-        font-weight: 700;
-        margin: 0 0 38px;
-    }
+.admin-app .sb .brand {
+    color: var(--white);
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 38px;
+}
 
-    .admin-app .sb a {
-        display: flex;
-        align-items: center;
-        min-height: 50px;
-        padding: 0 22px;
-        margin-bottom: 7px;
-        border-radius: 10px;
-        font-size: 16px;
-    }
+.admin-app .sb a {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    padding: 0 22px;
+    margin-bottom: 7px;
+    border-radius: 10px;
+    font-size: 16px;
+}
 
-        .admin-app .sb a:hover {
-            background: rgba(255, 255, 255, 0.07);
-        }
+.admin-app .sb a:hover {
+    background: rgba(255, 255, 255, 0.07);
+}
 
-        .admin-app .sb a.active {
-            background: var(--brown);
-            color: var(--white);
-            font-weight: 700;
-        }
+.admin-app .sb a.active {
+    background: var(--brown);
+    color: var(--white);
+    font-weight: 700;
+}
 
-    .admin-app .sb small {
-        margin-top: auto;
-        padding: 0 22px;
-        color: #8da0a2;
-        font-size: 12px;
-    }
+.admin-app .sb small {
+    margin-top: auto;
+    padding: 0 22px;
+    color: #8da0a2;
+    font-size: 12px;
+}
 
 .admin-app .am {
     min-height: 100vh;
@@ -330,15 +692,15 @@ body.admin-app {
     border-bottom: 1px solid var(--border);
 }
 
-    .admin-app .at > div:first-child {
-        display: flex;
-        align-items: center;
-        gap: 18px;
-    }
+.admin-app .at > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
 
-    .admin-app .at b {
-        font-size: 25px;
-    }
+.admin-app .at b {
+    font-size: 25px;
+}
 
 .admin-app .acc {
     color: #ef7658;
@@ -357,9 +719,9 @@ body.admin-app {
     line-height: 1.1;
 }
 
-    .admin-app .ar small {
-        color: var(--muted);
-    }
+.admin-app .ar small {
+    color: var(--muted);
+}
 
 .admin-app .avatar.s {
     width: 42px;
@@ -372,10 +734,93 @@ body.admin-app {
     padding: 36px 38px 50px;
 }
 
-/* =========================================================
-   DASHBOARD
-========================================================= */
+/* Admin controls are scoped */
+.admin-app input,
+.admin-app select,
+.admin-app textarea {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: var(--white);
+    padding: 11px 13px;
+    margin: 5px 0 14px;
+    outline: none;
+}
 
+.admin-app input:focus,
+.admin-app select:focus,
+.admin-app textarea:focus {
+    border-color: #b9c9c2;
+    box-shadow: 0 0 0 2px rgba(91, 64, 45, 0.08);
+}
+
+.admin-app input[type="checkbox"],
+.admin-app input[type="radio"] {
+    width: auto;
+    margin: 0 7px 0 0;
+}
+
+.admin-app label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.admin-app .btn {
+    width: 100%;
+    border: 0;
+    border-radius: 9px;
+    padding: 13px 18px;
+    background: var(--brown);
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.admin-app .btn:hover {
+    background: var(--brown-dark);
+}
+
+/* ================================
+   ADMIN ORANGE BUTTONS
+   ================================ */
+
+.admin-app .btn-or {
+    display: inline-block;
+    border: 0;
+    border-radius: 9px;
+    padding: 11px 20px;
+    /* Default appearance */
+    background: #f04423 !important;
+    color: #ffffff !important;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+}
+
+    /* Slightly darker on hover */
+    .admin-app .btn-or:hover {
+        background: #d9361c !important;
+    }
+
+    /* Full-width Publish button */
+    .admin-app .btn-or.wide {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+.admin-app .msg {
+    display: block;
+    margin: 8px 0;
+    color: #c0392b;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Admin dashboard */
 .admin-app .stat {
     position: relative;
     background: var(--white);
@@ -387,21 +832,18 @@ body.admin-app {
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
 }
 
-    .admin-app .stat small {
-        color: #68726f;
-        font-size: 17px;
-        font-weight: 700;
-    }
+.admin-app .stat small {
+    color: #68726f;
+    font-size: 17px;
+    font-weight: 700;
+}
 
-    .admin-app .stat h2 {
-        margin: 20px 0 0;
-        font-size: 42px;
-    }
+.admin-app .stat h2 {
+    margin: 20px 0 0;
+    font-size: 42px;
+}
 
-/* =========================================================
-   ADMIN TABLE PAGES
-========================================================= */
-
+/* Admin tables */
 .admin-app .tools {
     display: flex;
     align-items: center;
@@ -409,28 +851,24 @@ body.admin-app {
     margin-bottom: 28px;
 }
 
-    .admin-app .tools input,
-    .admin-app .tools select {
-        height: 42px;
-        margin: 0;
-        background: var(--white);
-    }
+.admin-app .tools input,
+.admin-app .tools select {
+    height: 42px;
+    margin: 0;
+    background: var(--white);
+}
 
-    .admin-app .tools input {
-        width: 310px;
-    }
+.admin-app .tools input {
+    width: 310px;
+}
 
-    .admin-app .tools select {
-        width: 180px;
-    }
+.admin-app .tools select {
+    width: 180px;
+}
 
-    .admin-app .tools .btn-or {
-        margin-left: 0;
-    }
-
-    .admin-app .tools > a.btn-or:last-child {
-        margin-left: auto;
-    }
+.admin-app .tools > a.btn-or:last-child {
+    margin-left: auto;
+}
 
 .admin-app .table-wrap {
     width: 100%;
@@ -447,25 +885,25 @@ body.admin-app {
     background: var(--white);
 }
 
-    .admin-app .tbl th {
-        background: var(--green-light);
-        color: var(--green);
-        text-align: left;
-        padding: 15px 18px;
-        font-size: 15px;
-        white-space: nowrap;
-    }
+.admin-app .tbl th {
+    background: var(--green-light);
+    color: var(--green);
+    text-align: left;
+    padding: 15px 18px;
+    font-size: 15px;
+    white-space: nowrap;
+}
 
-    .admin-app .tbl td {
-        padding: 15px 18px;
-        border-top: 1px solid var(--border);
-        font-size: 14px;
-        vertical-align: middle;
-    }
+.admin-app .tbl td {
+    padding: 15px 18px;
+    border-top: 1px solid var(--border);
+    font-size: 14px;
+    vertical-align: middle;
+}
 
-    .admin-app .tbl tr:hover td {
-        background: #fbfcfb;
-    }
+.admin-app .tbl tr:hover td {
+    background: #fbfcfb;
+}
 
 .admin-app .th {
     width: 72px;
@@ -486,11 +924,11 @@ body.admin-app {
     vertical-align: middle;
 }
 
-    .admin-app .avatar.s {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
-    }
+.admin-app .avatar.s {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
 
 .admin-app .del {
     color: var(--orange);
@@ -506,10 +944,7 @@ body.admin-app {
     font-weight: 700;
 }
 
-/* =========================================================
-   ADD STAY
-========================================================= */
-
+/* Admin Add Stay */
 .admin-app .two {
     display: grid;
     grid-template-columns: minmax(0, 2fr) minmax(330px, 1fr);
@@ -525,11 +960,11 @@ body.admin-app {
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.035);
 }
 
-    .admin-app .panel h3,
-    .admin-app .panel h4 {
-        margin: 0 0 25px;
-        font-size: 22px;
-    }
+.admin-app .panel h3,
+.admin-app .panel h4 {
+    margin: 0 0 25px;
+    font-size: 22px;
+}
 
 .admin-app .g2 {
     display: grid;
@@ -537,12 +972,8 @@ body.admin-app {
     gap: 18px;
 }
 
-    .admin-app .g2 input,
-    .admin-app .g2 select {
-        background: #f5f8f6;
-        border: 0;
-    }
-
+.admin-app .g2 input,
+.admin-app .g2 select,
 .admin-app .panel > input,
 .admin-app .panel > select {
     background: #f5f8f6;
@@ -564,17 +995,17 @@ body.admin-app {
     font-size: 18px;
 }
 
-    .admin-app .drop small {
-        color: var(--muted);
-        font-size: 13px;
-    }
+.admin-app .drop small {
+    color: var(--muted);
+    font-size: 13px;
+}
 
-    .admin-app .drop input[type="file"] {
-        width: auto;
-        margin: 12px 0 0;
-        background: transparent;
-        border: 0;
-    }
+.admin-app .drop input[type="file"] {
+    width: auto;
+    margin: 12px 0 0;
+    background: transparent;
+    border: 0;
+}
 
 .admin-app .wide {
     margin-top: 18px;
@@ -590,15 +1021,11 @@ body.admin-app {
     accent-color: #ff8060;
 }
 
-/* ASP.NET RadioButtonList rendered inline */
 .admin-app .panel span {
     line-height: 1.8;
 }
 
-/* =========================================================
-   PROFILE PAGES
-========================================================= */
-
+/* Admin Profile */
 .admin-app .wrap.prof {
     max-width: none;
     margin: 0;
@@ -615,21 +1042,21 @@ body.admin-app {
     padding-top: 35px;
 }
 
-    .admin-app .pcard .avatar {
-        width: 110px;
-        height: 110px;
-        font-size: 52px;
-    }
+.admin-app .pcard .avatar {
+    width: 110px;
+    height: 110px;
+    font-size: 52px;
+}
 
-    .admin-app .pcard h3 {
-        margin: 18px 0 4px;
-        font-size: 27px;
-    }
+.admin-app .pcard h3 {
+    margin: 18px 0 4px;
+    font-size: 27px;
+}
 
-    .admin-app .pcard .muted {
-        font-size: 16px;
-        line-height: 1.5;
-    }
+.admin-app .pcard .muted {
+    font-size: 16px;
+    line-height: 1.5;
+}
 
 .admin-app .item {
     display: block;
@@ -639,21 +1066,21 @@ body.admin-app {
     margin: 12px 0;
 }
 
-    .admin-app .item:hover {
-        background: #edf2ef;
-    }
+.admin-app .item:hover {
+    background: #edf2ef;
+}
 
-    .admin-app .item b {
-        display: block;
-        font-size: 17px;
-        margin-bottom: 3px;
-    }
+.admin-app .item b {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 3px;
+}
 
-    .admin-app .item small {
-        display: block;
-        color: var(--muted);
-        font-size: 14px;
-    }
+.admin-app .item small {
+    display: block;
+    color: var(--muted);
+    font-size: 14px;
+}
 
 .admin-app .panel .ph {
     display: flex;
@@ -663,9 +1090,9 @@ body.admin-app {
     font-size: 26px;
 }
 
-    .admin-app .panel .ph a {
-        font-size: 32px;
-    }
+.admin-app .panel .ph a {
+    font-size: 32px;
+}
 
 .admin-app .panel p,
 .admin-app .panel li {
@@ -684,10 +1111,10 @@ body.admin-app {
     font-size: 42px;
 }
 
-    .admin-app .panel .cam small {
-        display: block;
-        font-size: 13px;
-    }
+.admin-app .panel .cam small {
+    display: block;
+    font-size: 13px;
+}
 
 .admin-app .panel .row {
     display: flex;
@@ -698,7 +1125,7 @@ body.admin-app {
 
 /* =========================================================
    RESET PASSWORD
-========================================================= */
+   ========================================================= */
 
 body.reset-page {
     min-height: 100vh;
@@ -792,23 +1219,18 @@ body.reset-page {
     gap: 40px;
 }
 
-    .reset-page .site-footer h3 {
-        margin: 0 0 18px;
-        color: var(--white);
-    }
+.reset-page .site-footer h3,
+.reset-page .site-footer h4 {
+    color: var(--white);
+}
 
-    .reset-page .site-footer h4 {
-        margin: 0 0 14px;
-        color: var(--white);
-    }
-
-    .reset-page .site-footer p,
-    .reset-page .site-footer a {
-        display: block;
-        color: #aebaba;
-        margin: 8px 0;
-        font-size: 14px;
-    }
+.reset-page .site-footer p,
+.reset-page .site-footer a {
+    display: block;
+    color: #aebaba;
+    margin: 8px 0;
+    font-size: 14px;
+}
 
 .reset-page .copyright {
     grid-column: 1 / -1;
@@ -820,7 +1242,7 @@ body.reset-page {
 
 /* =========================================================
    RESPONSIVE
-========================================================= */
+   ========================================================= */
 
 @media (max-width: 1100px) {
     .admin-app .sb {
@@ -841,6 +1263,21 @@ body.reset-page {
 }
 
 @media (max-width: 800px) {
+    .grid3,
+    .grid2,
+    .split,
+    .sr,
+    .prof,
+    .two,
+    .footer {
+        grid-template-columns: 1fr;
+    }
+
+    .topbar {
+        flex-wrap: wrap;
+        padding: 12px 16px;
+    }
+
     .admin-login .split {
         grid-template-columns: 1fr;
     }
@@ -850,13 +1287,13 @@ body.reset-page {
         padding: 110px 35px 50px;
     }
 
-        .admin-login .side .brand {
-            left: 25px;
-        }
+    .admin-login .side .brand {
+        left: 25px;
+    }
 
-        .admin-login .side h1 {
-            font-size: 32px;
-        }
+    .admin-login .side h1 {
+        font-size: 32px;
+    }
 
     .admin-login .formside {
         min-height: 58vh;
@@ -902,9 +1339,9 @@ body.reset-page {
         flex-wrap: wrap;
     }
 
-        .admin-app .tools > a.btn-or:last-child {
-            margin-left: 0;
-        }
+    .admin-app .tools > a.btn-or:last-child {
+        margin-left: 0;
+    }
 
     .reset-page .site-footer {
         grid-template-columns: 1fr 1fr;
@@ -941,3 +1378,99 @@ body.reset-page {
         grid-template-columns: 1fr;
     }
 }
+
+/* ---------- COMMON STATUS ---------- */
+.msg {
+    color: #c0392b;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    margin: 6px 0;
+}
+
+.ok {
+    color: #2e7d52;
+}
+
+input[type="file"] {
+    background: transparent;
+    border: 0;
+}
+
+
+.radio-list input[type="radio"] {
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.radio-list label {
+    display: inline;
+    margin: 0;
+}
+
+/* =====================================================
+   USER AUTH BUTTONS
+   Register / Login / Reset Password
+   ===================================================== */
+
+body:not(.admin-app):not(.admin-login) input.btn {
+    width: 100%;
+    background-color: #5c4033 !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding: 10px !important;
+    border-radius: 6px !important;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+    body:not(.admin-app):not(.admin-login) input.btn:hover {
+        background-color: #4d3525 !important;
+    }
+
+
+/* Reset Password button */
+body.reset-page input.btn {
+    background-color: #5c4033 !important;
+    color: #ffffff !important;
+}
+
+    body.reset-page input.btn:hover {
+        background-color: #4d3525 !important;
+    }
+
+/* =====================================================
+   SEARCH PAGE - CHECKBOX & RADIO FILTERS
+   ===================================================== */
+
+.filters .filter-list {
+    display: block;
+    margin-bottom: 18px;
+}
+
+    /* Each option gets its own line */
+    .filters .filter-list span {
+        display: block;
+        margin: 8px 0;
+    }
+
+    /* Keep button/radio and text on the SAME line */
+    .filters .filter-list input[type="checkbox"],
+    .filters .filter-list input[type="radio"] {
+        display: inline-block;
+        width: auto !important;
+        margin: 0 7px 0 0 !important;
+        padding: 0;
+        vertical-align: middle;
+    }
+
+    /* Text beside the button */
+    .filters .filter-list label {
+        display: inline !important;
+        font-size: 13px;
+        font-weight: 400;
+        margin: 0;
+        vertical-align: middle;
+    }
