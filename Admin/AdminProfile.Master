@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="AdminProfile.Master.cs" Inherits="StayBuddy.Admin.AdminProfileMaster" %>
+
+<asp:Content ContentPlaceHolderID="MainContent" runat="server">
+
+    <section class="wrap prof">
+
+        <div class="pcard">
+            <div class="avatar">👨‍💼</div>
+            <h3><asp:Label ID="lblName" runat="server"></asp:Label></h3>
+            <small class="muted">
+                <asp:Label ID="lblEmail" runat="server"></asp:Label>
+                <br />
+                <asp:Label ID="lblMobile" runat="server"></asp:Label>
+            </small>
+        </div>
+
+        <div class="panel">
+            <asp:ContentPlaceHolder ID="PanelContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </section>
+
+</asp:Content>

@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Auth.Master.cs" Inherits="StayBuddy.AuthMaster" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server" id="head"><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title><%: Page.Title %> - StayBuddy</title><link href="~/Content/site.css" rel="stylesheet"/></head>
+<body>
+<form id="form1" runat="server">
+<header class="topbar">
+<a class="brand" runat="server" href="~/Login.aspx">
+<span class="logo">&#8962;</span> StayBuddy</a>
+</header>
+<main>
+<asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+</main>
+<footer class="footer">
+<div>
+<b>&#8962; StayBuddy</b>
+<p>Find your perfect stays for students and working professionals.</p>
+</div>
+<div><b>Discover</b>
+<a runat="server" href="~/Default.aspx?category=PG">Paying Guest (PG)</a>
+<a runat="server" href="~/Default.aspx?category=Hostel">Hostels</a><a runat="server" href="~/Default.aspx?category=Room">Rooms</a>
+</div>
+<div><b>Support</b>
+<a runat="server" href="~/About.aspx">About StayBuddy</a><a runat="server" href="~/Faq.aspx">FAQ</a>
+<a runat="server" href="~/Privacy.aspx">Privacy Policy</a></div>
+<div><b>Contact Us</b><a>support@staybuddy.com</a><a>+91 98643 82021</a></div>
+<small>&copy; 2026 StayBuddy. Made with &#10084;&#65039; in India. All rights reserved.</small></footer>
+</form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="StayBuddy.SiteMaster" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server" id="head"><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title><%: Page.Title %> - StayBuddy</title><link href="~/Content/site.css" rel="stylesheet"/></head>
+<body>
+<form id="form1" runat="server">
+<header class="topbar">
+<a class="brand" runat="server" href="~/Default.aspx">
+<span class="logo">&#8962;</span> StayBuddy</a>
+<span class="loc">&#128205; Rajkot, Gujarat</span>
+<nav>
+<a class="<%= Act("Default") %>" href="<%= ResolveUrl("~/Default.aspx") %>">Home</a>
+<a class="<%= Act("Search") %>" href="<%= ResolveUrl("~/Search.aspx") %>">Search Stays</a>
+<a class="<%= Act("Saved") %>" href="<%= ResolveUrl("~/Saved.aspx") %>">Saved Stays</a>
+<a class="<%= Act("MyProfile","EditProfile","About","Privacy","Faq","MySaved") %>" href="<%= ResolveUrl("~/MyProfile.aspx") %>">Profile</a>
+<asp:LinkButton ID="lnkLogout" runat="server" CssClass="btn-dark" OnClick="lnkLogout_Click" CausesValidation="false">Logout</asp:LinkButton>
+</nav>
+</header>
+<main>
+<asp:ContentPlaceHolder ID="MainContent" runat="server">
+</asp:ContentPlaceHolder>
+</main>
+<footer class="footer">
+<div>
+<b>&#8962; StayBuddy</b>
+<p>Find your perfect stays for students and working professionals.</p>
+</div>
+<div>
+<b>Discover</b>
+<a runat="server" href="~/Default.aspx?category=PG">Paying Guest (PG)</a>
+<a runat="server" href="~/Default.aspx?category=Hostel">Hostels</a>
+<a runat="server" href="~/Default.aspx?category=Room">Rooms</a>
+</div>
+<div><b>Support</b>
+<a runat="server" href="~/About.aspx">About StayBuddy</a>
+<a runat="server" href="~/Faq.aspx">FAQ</a>
+<a runat="server" href="~/Privacy.aspx">Privacy Policy</a>
+</div>
+<div><b>Contact Us</b>
+<a>support@staybuddy.com</a><a>+91 98643 82021</a>
+</div>
+<small>&copy; 2026 StayBuddy. Made with &#10084;&#65039; in India. All rights reserved.</small>
+</footer>
+</form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using StayBuddy.Models;
+
+namespace StayBuddy
+{
+    public partial class MySaved : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            rptStays.DataSource = Store.Stays.Where(s => Store.Saved.Contains(s.Id)).ToList();
+            rptStays.DataBind();
+        }
+    }
+}

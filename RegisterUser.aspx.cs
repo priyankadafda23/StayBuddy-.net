@@ -1,39 +1,23 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using StayBuddy.Models;
 
-namespace StayBuddy_.net
+namespace StayBuddy
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class Register : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
         protected void btnRegister_Click(object sender, EventArgs e)
         {
-            string fullName = txtFullName.Text.Trim();
-            string email = txtEmail.Text.Trim();
-            string mobile = txtMobile.Text.Trim();
-            string password = txtPassword.Text;
-            string confirmPassword = txtConfirmPassword.Text;
-
-            if (string.IsNullOrEmpty(fullName) ||
-                string.IsNullOrEmpty(email) ||
-                string.IsNullOrEmpty(mobile) ||
-                string.IsNullOrEmpty(password) ||
-                string.IsNullOrEmpty(confirmPassword))
-            {
-                Response.Write("<script>alert('Please fill all fields.');</script>");
-                return;
-            }
-
-            if (password != confirmPassword)
-            {
-                Response.Write("<script>alert('Passwords do not match.');</script>");
-                return;
-            }
-
-            Response.Write("<script>alert('Registration successful!');</script>");
+            if (txtName.Text.Trim() == "" || txtEmail.Text.Trim() == "" || txtPassword.Text == "") { lblMsg.Text = "Please fill all fields."; return; }
+            if (txtPassword.Text != txtConfirm.Text) { lblMsg.Text = "Passwords do not match."; return; }
+            if (Store.Users.Any(x => x.Email.Equals(txtEmail.Text.Trim(), StringComparison.OrdinalIgnoreCase))) { lblMsg.Text = "Email already registered."; return; }
+            Store.Users.Add(new AppUser { Name = txtName.Text.Trim(), Email = txtEmail.Text.Trim(), Mobile = txtMobile.Text.Trim(), Password = txtPassword.Text, Status = "ACTIVE STUDENT" });
+            Response.Redirect("~/Login.aspx");
         }
     }
 }

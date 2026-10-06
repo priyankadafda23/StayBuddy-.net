@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.Master.cs" Inherits="StayBuddy.Admin.AdminMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server" id="head">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - StayBuddy</title>
+    <link href="~/Content/site.css" rel="stylesheet" />
+</head>
+
+<body class="admin-app">
+<form id="form1" runat="server">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sb">
+        <div class="brand">⌂ StayBuddy</div>
+
+        <a class="<%= Act("Dashboard") %>" href="<%= ResolveUrl("~/Admin/Dashboard.aspx") %>">
+            ▦ &nbsp; Dashboard
+        </a>
+
+        <a class="<%= Act("ManageStays") %>" href="<%= ResolveUrl("~/Admin/ManageStays.aspx") %>">
+            ♧ &nbsp; Manage Stays
+        </a>
+
+        <a class="<%= Act("ManageUsers") %>" href="<%= ResolveUrl("~/Admin/ManageUsers.aspx") %>">
+            ♙ &nbsp; Manage Users
+        </a>
+
+        <a class="<%= Act("AddStay") %>" href="<%= ResolveUrl("~/Admin/AddStay.aspx") %>">
+            ＋ &nbsp; Add Stay
+        </a>
+
+        <a class="<%= Act("AdminProfile", "AdminEditProfile", "AdminAbout", "AdminPrivacy") %>"
+           href="<%= ResolveUrl("~/Admin/AdminProfile.aspx") %>">
+            ⚙ &nbsp; Profile
+        </a>
+
+        <small>StayBuddy Admin</small>
+    </aside>
+
+    <!-- RIGHT SIDE -->
+    <div class="am">
+
+        <!-- TOP BAR -->
+        <header class="at">
+            <div>
+                <b><%: Page.Title %></b>
+                <span class="acc">ADMIN ACCESS</span>
+            </div>
+
+            <div class="ar">
+                <span class="avatar s">👨‍💼</span>
+                <span>
+                    Darshan Parmar<br />
+                    <small>Admin</small>
+                </span>
+
+                <asp:LinkButton
+                    ID="lnkLogout"
+                    runat="server"
+                    CssClass="btn-or"
+                    OnClick="lnkLogout_Click"
+                    CausesValidation="false">
+                    Log Out
+                </asp:LinkButton>
+            </div>
+        </header>
+
+        <!-- PAGE CONTENT -->
+        <main class="ab">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+
+    </div>
+
+</form>
+</body>
+</html>

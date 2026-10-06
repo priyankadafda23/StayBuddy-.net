@@ -1,0 +1,943 @@
+/* =========================================================
+   STAYBUDDY - SHARED STYLES
+   Clean, beginner-friendly CSS for the Admin area
+========================================================= */
+
+:root {
+    --navy: #062d35;
+    --navy-dark: #05272e;
+    --brown: #5b402d;
+    --brown-dark: #4d3525;
+    --orange: #ff4b22;
+    --orange-light: #fff0eb;
+    --page-bg: #f4f7f5;
+    --white: #ffffff;
+    --cream: #eee9df;
+    --text: #222827;
+    --muted: #6f7977;
+    --border: #e0e8e4;
+    --green-light: #e9f3ed;
+    --green: #3d6f4b;
+    --footer: #202a2c;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--text);
+}
+
+body {
+    background: var(--page-bg);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+/* =========================================================
+   COMMON CONTROLS
+========================================================= */
+
+input,
+select,
+textarea {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: var(--white);
+    padding: 11px 13px;
+    margin: 5px 0 14px;
+    outline: none;
+}
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+        border-color: #b9c9c2;
+        box-shadow: 0 0 0 2px rgba(91, 64, 45, 0.08);
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        width: auto;
+        margin: 0 7px 0 0;
+    }
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.btn {
+    width: 100%;
+    border: 0;
+    border-radius: 9px;
+    padding: 13px 18px;
+    background: var(--brown);
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+    .btn:hover {
+        background: var(--brown-dark);
+    }
+
+.btn-or {
+    display: inline-block;
+    border: 0;
+    border-radius: 9px;
+    padding: 11px 20px;
+    background: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+    .btn-or:hover {
+        background: #e9431e;
+    }
+
+    .btn-or.wide {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+.msg {
+    display: block;
+    margin: 8px 0;
+    color: #c0392b;
+    font-size: 13px;
+    text-align: center;
+}
+
+    .msg.ok {
+        color: var(--green);
+    }
+
+.muted {
+    color: var(--muted);
+}
+
+/* =========================================================
+   ADMIN LOGIN
+   This page intentionally does NOT use the admin sidebar.
+========================================================= */
+
+body.admin-login {
+    min-height: 100vh;
+    background: var(--white);
+}
+
+.admin-login form {
+    min-height: 100vh;
+}
+
+.admin-login .split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+.admin-login .side {
+    background: var(--navy);
+    color: var(--white);
+    padding: 34px 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    .admin-login .side .brand {
+        position: absolute;
+        top: 27px;
+        left: 22px;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .admin-login .side h1 {
+        margin: 0 0 25px;
+        font-size: 40px;
+        line-height: 1.25;
+        max-width: 700px;
+    }
+
+    .admin-login .side p {
+        margin: 0;
+        font-size: 18px;
+        color: #e2ebeb;
+    }
+
+.admin-login .formside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 70px;
+    background: var(--white);
+}
+
+.admin-login .fbox {
+    width: 100%;
+    max-width: 500px;
+}
+
+    .admin-login .fbox h2 {
+        margin: 0 0 5px;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .admin-login .fbox > .muted {
+        display: block;
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+
+    .admin-login .fbox label {
+        font-size: 15px;
+    }
+
+    .admin-login .fbox input[type="text"],
+    .admin-login .fbox input[type="email"],
+    .admin-login .fbox input[type="password"] {
+        height: 52px;
+        background: var(--cream);
+        border: 0;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+.admin-login .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2px 0 30px;
+}
+
+    .admin-login .row .inl {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .admin-login .row a {
+        color: var(--brown);
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+.admin-login .btn {
+    height: 52px;
+    font-size: 17px;
+}
+
+/* =========================================================
+   ADMIN APPLICATION LAYOUT
+========================================================= */
+
+body.admin-app {
+    min-height: 100vh;
+    background: var(--page-bg);
+}
+
+.admin-app form {
+    min-height: 100vh;
+}
+
+.admin-app .sb {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 285px;
+    background: var(--navy);
+    color: #d8e2e2;
+    padding: 28px 22px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+    .admin-app .sb .brand {
+        color: var(--white);
+        font-size: 28px;
+        font-weight: 700;
+        margin: 0 0 38px;
+    }
+
+    .admin-app .sb a {
+        display: flex;
+        align-items: center;
+        min-height: 50px;
+        padding: 0 22px;
+        margin-bottom: 7px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+        .admin-app .sb a:hover {
+            background: rgba(255, 255, 255, 0.07);
+        }
+
+        .admin-app .sb a.active {
+            background: var(--brown);
+            color: var(--white);
+            font-weight: 700;
+        }
+
+    .admin-app .sb small {
+        margin-top: auto;
+        padding: 0 22px;
+        color: #8da0a2;
+        font-size: 12px;
+    }
+
+.admin-app .am {
+    min-height: 100vh;
+    margin-left: 285px;
+}
+
+.admin-app .at {
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 36px;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+}
+
+    .admin-app .at > div:first-child {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .admin-app .at b {
+        font-size: 25px;
+    }
+
+.admin-app .acc {
+    color: #ef7658;
+    background: var(--orange-light);
+    padding: 5px 10px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.admin-app .ar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    line-height: 1.1;
+}
+
+    .admin-app .ar small {
+        color: var(--muted);
+    }
+
+.admin-app .avatar.s {
+    width: 42px;
+    height: 42px;
+    font-size: 22px;
+}
+
+.admin-app .ab {
+    min-height: calc(100vh - 78px);
+    padding: 36px 38px 50px;
+}
+
+/* =========================================================
+   DASHBOARD
+========================================================= */
+
+.admin-app .stat {
+    position: relative;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    min-height: 150px;
+    padding: 38px 28px;
+    margin-bottom: 38px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+    .admin-app .stat small {
+        color: #68726f;
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .admin-app .stat h2 {
+        margin: 20px 0 0;
+        font-size: 42px;
+    }
+
+/* =========================================================
+   ADMIN TABLE PAGES
+========================================================= */
+
+.admin-app .tools {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+    .admin-app .tools input,
+    .admin-app .tools select {
+        height: 42px;
+        margin: 0;
+        background: var(--white);
+    }
+
+    .admin-app .tools input {
+        width: 310px;
+    }
+
+    .admin-app .tools select {
+        width: 180px;
+    }
+
+    .admin-app .tools .btn-or {
+        margin-left: 0;
+    }
+
+    .admin-app .tools > a.btn-or:last-child {
+        margin-left: auto;
+    }
+
+.admin-app .table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+}
+
+.admin-app .tbl {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+    background: var(--white);
+}
+
+    .admin-app .tbl th {
+        background: var(--green-light);
+        color: var(--green);
+        text-align: left;
+        padding: 15px 18px;
+        font-size: 15px;
+        white-space: nowrap;
+    }
+
+    .admin-app .tbl td {
+        padding: 15px 18px;
+        border-top: 1px solid var(--border);
+        font-size: 14px;
+        vertical-align: middle;
+    }
+
+    .admin-app .tbl tr:hover td {
+        background: #fbfcfb;
+    }
+
+.admin-app .th {
+    width: 72px;
+    height: 58px;
+    background: #d8dedb center/cover no-repeat;
+    border-radius: 8px;
+}
+
+.admin-app .avatar {
+    display: inline-flex;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: #f4c15d;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    vertical-align: middle;
+}
+
+    .admin-app .avatar.s {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+.admin-app .del {
+    color: var(--orange);
+    font-size: 20px;
+}
+
+.admin-app .badge {
+    background: var(--green-light);
+    color: var(--green);
+    padding: 5px 10px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* =========================================================
+   ADD STAY
+========================================================= */
+
+.admin-app .two {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(330px, 1fr);
+    gap: 36px;
+}
+
+.admin-app .panel,
+.admin-app .pcard {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.035);
+}
+
+    .admin-app .panel h3,
+    .admin-app .panel h4 {
+        margin: 0 0 25px;
+        font-size: 22px;
+    }
+
+.admin-app .g2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+    .admin-app .g2 input,
+    .admin-app .g2 select {
+        background: #f5f8f6;
+        border: 0;
+    }
+
+.admin-app .panel > input,
+.admin-app .panel > select {
+    background: #f5f8f6;
+    border: 0;
+}
+
+.admin-app .drop {
+    min-height: 245px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #d9e3de;
+    border-radius: 14px;
+    background: #f7faf8;
+    text-align: center;
+    margin: 8px 0 25px;
+    color: #ff7b55;
+    font-size: 18px;
+}
+
+    .admin-app .drop small {
+        color: var(--muted);
+        font-size: 13px;
+    }
+
+    .admin-app .drop input[type="file"] {
+        width: auto;
+        margin: 12px 0 0;
+        background: transparent;
+        border: 0;
+    }
+
+.admin-app .wide {
+    margin-top: 18px;
+    font-size: 16px;
+}
+
+.admin-app .g2 .radio-list,
+.admin-app .panel .radio-list {
+    margin-top: 10px;
+}
+
+.admin-app .panel input[type="radio"] {
+    accent-color: #ff8060;
+}
+
+/* ASP.NET RadioButtonList rendered inline */
+.admin-app .panel span {
+    line-height: 1.8;
+}
+
+/* =========================================================
+   PROFILE PAGES
+========================================================= */
+
+.admin-app .wrap.prof {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: minmax(360px, 0.9fr) minmax(0, 1.7fr);
+    gap: 36px;
+    align-items: start;
+}
+
+.admin-app .pcard {
+    text-align: center;
+    min-height: 245px;
+    padding-top: 35px;
+}
+
+    .admin-app .pcard .avatar {
+        width: 110px;
+        height: 110px;
+        font-size: 52px;
+    }
+
+    .admin-app .pcard h3 {
+        margin: 18px 0 4px;
+        font-size: 27px;
+    }
+
+    .admin-app .pcard .muted {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+.admin-app .item {
+    display: block;
+    background: #f4f7f5;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 12px 0;
+}
+
+    .admin-app .item:hover {
+        background: #edf2ef;
+    }
+
+    .admin-app .item b {
+        display: block;
+        font-size: 17px;
+        margin-bottom: 3px;
+    }
+
+    .admin-app .item small {
+        display: block;
+        color: var(--muted);
+        font-size: 14px;
+    }
+
+.admin-app .panel .ph {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 0 0 18px;
+    font-size: 26px;
+}
+
+    .admin-app .panel .ph a {
+        font-size: 32px;
+    }
+
+.admin-app .panel p,
+.admin-app .panel li {
+    font-size: 17px;
+    line-height: 1.35;
+}
+
+.admin-app .panel ul {
+    margin-top: 6px;
+    padding-left: 25px;
+}
+
+.admin-app .panel .cam {
+    text-align: center;
+    margin: 10px 0 24px;
+    font-size: 42px;
+}
+
+    .admin-app .panel .cam small {
+        display: block;
+        font-size: 13px;
+    }
+
+.admin-app .panel .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+/* =========================================================
+   RESET PASSWORD
+========================================================= */
+
+body.reset-page {
+    min-height: 100vh;
+    background: #f6f7f6;
+}
+
+.reset-page .reset-header {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    padding: 0 7%;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+}
+
+.reset-page .reset-logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #193238;
+}
+
+.reset-page .reset-main {
+    min-height: calc(100vh - 72px - 220px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 20px;
+}
+
+.reset-page .reset-card {
+    width: 100%;
+    max-width: 510px;
+    background: var(--white);
+    border: 1px solid #dce2df;
+    border-radius: 18px;
+    padding: 44px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+}
+
+.reset-page .reset-icon {
+    width: 62px;
+    height: 62px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #eaf5ed;
+    font-size: 28px;
+}
+
+.reset-page .reset-card h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 28px;
+}
+
+.reset-page .reset-subtitle {
+    text-align: center;
+    color: var(--muted);
+    margin: 10px 0 35px;
+}
+
+.reset-page .reset-card input {
+    height: 47px;
+    background: #f5f5f5;
+    border-color: #d9d9d9;
+}
+
+.reset-page .reset-card .btn {
+    height: 52px;
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.reset-page .back-login {
+    display: block;
+    text-align: center;
+    color: var(--brown);
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.reset-page .site-footer {
+    min-height: 220px;
+    background: var(--footer);
+    color: #d6dddd;
+    padding: 42px 7% 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+    .reset-page .site-footer h3 {
+        margin: 0 0 18px;
+        color: var(--white);
+    }
+
+    .reset-page .site-footer h4 {
+        margin: 0 0 14px;
+        color: var(--white);
+    }
+
+    .reset-page .site-footer p,
+    .reset-page .site-footer a {
+        display: block;
+        color: #aebaba;
+        margin: 8px 0;
+        font-size: 14px;
+    }
+
+.reset-page .copyright {
+    grid-column: 1 / -1;
+    border-top: 1px solid #354144;
+    padding-top: 18px;
+    font-size: 14px;
+    color: #c7d0d0;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+    .admin-app .sb {
+        width: 230px;
+    }
+
+    .admin-app .am {
+        margin-left: 230px;
+    }
+
+    .admin-app .wrap.prof {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-app .two {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .admin-login .split {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-login .side {
+        min-height: 42vh;
+        padding: 110px 35px 50px;
+    }
+
+        .admin-login .side .brand {
+            left: 25px;
+        }
+
+        .admin-login .side h1 {
+            font-size: 32px;
+        }
+
+    .admin-login .formside {
+        min-height: 58vh;
+        padding: 40px 25px;
+    }
+
+    .admin-app .sb {
+        position: static;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .admin-app .am {
+        margin-left: 0;
+    }
+
+    .admin-app .sb a {
+        display: inline-flex;
+        width: auto;
+        margin-right: 5px;
+    }
+
+    .admin-app .sb small {
+        margin-top: 15px;
+    }
+
+    .admin-app .at {
+        height: auto;
+        min-height: 78px;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .admin-app .ab {
+        padding: 24px 18px 40px;
+    }
+
+    .admin-app .g2 {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-app .tools {
+        flex-wrap: wrap;
+    }
+
+        .admin-app .tools > a.btn-or:last-child {
+            margin-left: 0;
+        }
+
+    .reset-page .site-footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 520px) {
+    .admin-app .at > div:first-child {
+        flex-wrap: wrap;
+    }
+
+    .admin-app .ar > span:not(.avatar) {
+        display: none;
+    }
+
+    .admin-app .ar .btn-or {
+        padding: 9px 12px;
+    }
+
+    .admin-app .sb .brand {
+        font-size: 23px;
+    }
+
+    .admin-app .sb a {
+        font-size: 14px;
+        padding: 0 13px;
+    }
+
+    .reset-page .reset-card {
+        padding: 30px 22px;
+    }
+
+    .reset-page .site-footer {
+        grid-template-columns: 1fr;
+    }
+}
